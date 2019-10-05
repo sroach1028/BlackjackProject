@@ -1,6 +1,5 @@
 package com.skilldistillery.blackjack;
 
-
 import java.util.Scanner;
 
 import com.skilldistillery.blackjack.Dealer;
@@ -9,11 +8,6 @@ import com.skilldistillery.blackjack.Player;
 public class BlackJackTable {
 	private Player p1 = new Player();
 	private Dealer dealer = new Dealer();
-
-	public static void main(String[] args) {
-		BlackJackTable bjt = new BlackJackTable();
-		bjt.startGame();
-	}
 
 	public void startGame() {
 		dealer.deck.shuffle();
