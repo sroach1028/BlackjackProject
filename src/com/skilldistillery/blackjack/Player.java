@@ -1,8 +1,16 @@
 package com.skilldistillery.blackjack;
 
 public class Player {
-	BlackJackHand hand;
+	private BlackJackHand hand;
 	
+
+	public BlackJackHand getHand() {
+		return this.hand;
+	}
+
+	public void setHand(BlackJackHand hand) {
+		this.hand = hand;
+	}
 
 	public Player() {
 		this.hand = new BlackJackHand();

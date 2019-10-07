@@ -7,14 +7,30 @@ import com.skilldistillery.blackjack.BlackJackDealerHand;
 import com.skilldistillery.blackjack.Deck;
 
 public class Dealer{
-	Deck deck;
-	BlackJackDealerHand hand;
+	private Deck deck;
+	private BlackJackDealerHand hand;
 	
 	public Dealer() {
 		this.deck = new Deck();
 		this.hand = new BlackJackDealerHand();
 	}
 	
+	public Deck getDeck() {
+		return this.deck;
+	}
+
+	public void setDeck(Deck deck) {
+		this.deck = deck;
+	}
+
+	public BlackJackDealerHand getHand() {
+		return this.hand;
+	}
+
+	public void setHand(BlackJackDealerHand hand) {
+		this.hand = hand;
+	}
+
 	public void addCard(Card card) {
 		this.hand.addCard(card);
 	}
