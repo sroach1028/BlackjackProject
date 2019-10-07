@@ -37,9 +37,6 @@ public class BlackJackDealerHand extends BlackJackHand {
 		return this.getValue()== 21;
 	}
 
-	public boolean is21() {
-		return this.getValue()==21;
-	}
 	public boolean is17() {
 		boolean is17 = false;
 		if (this.getValue() >= 17) {
