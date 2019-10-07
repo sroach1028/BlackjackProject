@@ -34,11 +34,8 @@ public class BlackJackHand extends Hand{
 	}
 	
 	public boolean isBust() {
-		boolean isBust = false;
-		if (this.getValue()> 21) {
-		isBust = true;
-		}
-		return isBust;
+		
+		return (this.getValue()>21);
 	}
 	
 	public boolean isBlackJack() {
